@@ -1,0 +1,67 @@
+Expression                          Mark                          Type
+         #                             #                          符号
+   include                            id                        标识符
+         <                         relop                    关系运算符
+     stdio                            id                        标识符
+         .                             .                          符号
+         h                            id                        标识符
+         >                         relop                    关系运算符
+       int                           int                        关键字
+      main                            id                        标识符
+         (                             (                          符号
+         )                             )                          符号
+         {                             {                          符号
+       int                           int                        关键字
+       num                            id                        标识符
+         ,                             ,                          符号
+ summation                            id                        标识符
+         ,                             ,                          符号
+8errorName                         ERROR                      错误在第5行第25列
+         ,                             ,                          符号
+       fla                            id                        标识符
+         &                      logic_op              位运算符或取址符
+         g                            id                        标识符
+         ;                             ;                          符号
+//发生错误                    annotation                          注释
+    printf                            id                        标识符
+         (                             (                          符号
+"Please input a num:"                       literal                        字符串
+         )                             )                          符号
+         ;                             ;                          符号
+  /*输出*/                    annotation                          注释
+     scanf                            id                        标识符
+         (                             (                          符号
+      "%d"                       literal                        字符串
+         ,                             ,                          符号
+         &                      logic_op              位运算符或取址符
+       num                            id                        标识符
+         )                             )                          符号
+         ;                             ;                          符号
+ summation                            id                        标识符
+         =                     assign_op                        赋值符
+       num                            id                        标识符
+         +                        alg_op                        运算符
+     9.4EE                         ERROR                      错误在第8行第23列
+         +                        alg_op                        运算符
+        10                           num                      无符号数
+         ;                             ;                          符号
+//常数错误                    annotation                          注释
+    printf                            id                        标识符
+         (                             (                          符号
+"The result is %d"                       literal                        字符串
+         ,                             ,                          符号
+ summation                            id                        标识符
+         )                             )                          符号
+         ;                             ;                          符号
+    system                            id                        标识符
+         (                             (                          符号
+   "pause"                       literal                        字符串
+         )                             )                          符号
+         ;                             ;                          符号
+    return                        return                        关键字
+         0                           num                      无符号数
+         ;                             ;                          符号
+         }                             }                          符号
+语句行数：13
+单词个数：23
+字符个数：215

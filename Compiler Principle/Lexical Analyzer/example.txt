@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main()
+{
+    int num,summation,8errorName,fla&g;          //发生错误
+
+    printf("Please input a num:");   /*输出*/    
+    scanf("%d",&num);
+    summation=num+9.4EE+10; //常数错误
+    printf("The result is %d",summation);
+  
+    system("pause");
+    return 0;  
+    }
