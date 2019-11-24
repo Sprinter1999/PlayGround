@@ -1,0 +1,26 @@
+en
+vlan database
+abort
+erase flash
+
+vlan database
+vlan 5
+exit
+conf t
+hostname SW2
+interface vlan 5
+int f1/11
+switchport acces vlan 5
+no shutdown
+exit
+int f1/1
+switchport mode trunk
+switchport trunk allowed vlan all
+exit
+int f1/2
+switchport acces vlan 5
+no shutdown
+exit
+no cdp run
+exit
+wr

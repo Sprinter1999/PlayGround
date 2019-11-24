@@ -1,0 +1,10 @@
+en
+conf t
+hostname PC7
+int f0/0
+ip add 202.253.7.1 255.255.255.0
+no shutdown
+exit
+ip route 0.0.0.0 0.0.0.0 202.253.7.2
+exit
+wr

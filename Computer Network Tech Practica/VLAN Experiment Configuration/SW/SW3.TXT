@@ -1,0 +1,50 @@
+en
+vlan database
+abort
+erase flash
+
+vlan database
+vlan 6
+vlan 7
+vlan 8
+vlan 10
+exit
+conf t
+hostname SW3
+interface vlan 6
+exit
+interface vlan 7
+exit
+interface vlan 10
+exit
+interface vlan 8
+exit
+int f1/10
+switchport access vlan 10
+no shutdown
+exit
+int f1/11
+switchport access vlan 6
+no shutdown
+exit
+int f1/12
+switchport access vlan 7
+no shutdown
+exit
+int f1/13
+switchport access vlan 8
+no shutdown
+exit
+int f1/1
+switchport mode trunk
+switchport trunk allowed vlan all
+no shutdown
+exit
+int f1/2
+switchport mode trunk
+switchport trunk allowed vlan all
+no shutdown
+exit
+no cdp run
+exit
+wr

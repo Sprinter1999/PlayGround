@@ -1,0 +1,11 @@
+en
+conf t
+hostname PC12
+int f0/0
+ip add 1.1.0.1 255.0.0.0
+no shutdown
+exit
+no cdp run
+ip route 0.0.0.0 0.0.0.0 f0/0
+exit
+wr

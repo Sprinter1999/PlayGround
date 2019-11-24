@@ -1,0 +1,34 @@
+en
+vlan database
+abort
+erase flash
+
+vlan database
+vlan 9
+vlan 10
+exit
+conf t
+hostname SW4
+interface vlan 9
+interface vlan 10
+int f1/10
+switchport access vlan 10
+no shutdown
+exit
+int f1/11
+switchport access vlan 9
+no shutdown
+exit
+int f1/1
+switchport mode trunk
+switchport trunk allowed vlan all
+no shutdown
+exit
+int f1/2
+switchport mode trunk
+switchport trunk allowed vlan all
+no shutdown
+exit
+no cdp run
+exit
+wr

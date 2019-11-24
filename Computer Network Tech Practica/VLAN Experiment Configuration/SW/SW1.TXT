@@ -1,0 +1,42 @@
+en
+vlan database
+abort
+erase flash
+
+vlan database
+vlan 2
+vlan 3
+vlan 4
+exit
+conf t
+hostname SW1
+interface vlan 2
+exit
+interface vlan 3
+exit
+interface vlan 4
+exit
+int f1/11
+switchport access vlan 2
+no shutdown
+exit
+int f1/12
+switchport access vlan 3
+no shutdown
+exit
+int f1/13
+switchport access vlan 4
+no shutdown
+exit
+int f1/1
+switchport mode trunk
+switchport trunk allowed vlan all
+no shutdown
+exit
+int f1/2
+switchport mode trunk
+switchport trunk allowed vlan all
+no shutdown
+exit
+exit
+wr
