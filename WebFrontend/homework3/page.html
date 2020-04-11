@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width">
+    <title>xuefen's calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- 可以不用jQuery，但是用JS代码比较冗长，而且重复性也比较强，并且jQuery就是JS写出来的而且高效 ,用jQuery四舍五入等于不用jQuery-->
+    <script type="text/javascript" src="test.js"></script>
+
+</head>
+
+<body>
+    <p>班级：2017211314</p>
+    <p>学号：2017213508</p>
+    <p>姓名：蒋雪枫</p>
+    <div class="Frame" style="margin-left: 20vh;">
+        <div class="header">Calculator</div>
+        <div class="Result" id="result" value="Result:">
+            <div style="margin-right: 5px;"></div>
+        </div>
+        <div class="button">
+            <div class="row">
+                <!-- <div class="button-item" value="**2"></div> -->
+                <button type="button" class=" btn btn-default button-item  ">x<sup>2</sup></button>
+                <button type="button" class=" btn btn-default button-item  ">x<sup>y</sup></button>
+                <button type="button" class=" btn btn-default button-item  ">sin</button>
+                <button type="button" class=" btn btn-default button-item  ">cos</button>
+                <button type="button" class=" btn btn-default button-item  ">tan</button>
+            </div>
+            <div class="row">
+                <button type="button" class=" btn btn-default button-item  " value="sqrt">√</button>
+                <button type="button" class=" btn btn-default button-item  " value="10**">10<sup>x</sup></button>
+                <button type="button" class=" btn btn-default button-item  ">log</button>
+                <button type="button" class=" btn btn-default button-item  " value="(2.71)**">Exp</button>
+                <button type="button" class=" btn btn-default button-item  " value="%">Mod</button>
+            </div>
+            <div class="row">
+                <button type="button" class=" btn btn-default button-item  ">↑</button>                
+                <button type="button" class=" btn btn-danger button-ite " id="ce">CE</button>                
+                <button type="button" class=" btn btn-danger button-ite " id="c">C</button>                
+                <button type="button" class=" btn btn-danger button-ite " id="del">DEL</button>                
+                <button type="button" class=" btn btn-default button-item  " id="/">÷</button>                
+            </div>
+            <div class="row">
+                <button type="button" class=" btn btn-default button-item  " value="3.14">π</button>                
+                <button type="button" class=" btn btn-default button-item  " >7</button>                
+                <button type="button" class=" btn btn-default button-item  " >8</button>                
+                <button type="button" class=" btn btn-default button-item  ">9</button>                
+                <button type="button" class=" btn btn-default button-item  " value="*">×</button>                
+
+            </div>
+            <div class="row">
+                <button type="button" class=" btn btn-default button-item  " value="!">n!</button>                
+                <button type="button" class=" btn btn-default button-item  ">4</button>                
+                <button type="button" class=" btn btn-default button-item  ">5</button>                
+                <button type="button" class=" btn btn-default button-item  ">6</button>                
+                <button type="button" class=" btn btn-default button-item  ">-</button>                
+            </div>
+            <div class="row">
+                <button type="button" class=" btn btn-default button-item  ">±</button>                
+                <button type="button" class=" btn btn-default button-item  ">1</button>                
+                <button type="button" class=" btn btn-default button-item  ">2</button>                
+                <button type="button" class=" btn btn-default button-item  ">3</button>                
+                <button type="button" class=" btn btn-default button-item  ">+</button>                
+
+            </div>
+            <div class="row">
+                <button type="button" class=" btn btn-default button-item  ">(</button>                
+                <button type="button" class=" btn btn-default button-item  ">)</button>                
+                <button type="button" class=" btn btn-default button-item  ">0</button>                
+                <button type="button" class=" btn btn-default button-item  ">.</button>                
+                <button type="button" class=" btn btn-success button-green" id="cal" onclick="calc()">=</button>                
+                
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

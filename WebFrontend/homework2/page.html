@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width">
+    <title>xuefen's calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- 可以不用jQuery，但是用JS代码比较冗长，而且重复性也比较强，并且jQuery就是JS写出来的而且高效 ,用jQuery四舍五入等于不用jQuery-->
+    <script type="text/javascript" src="test.js"></script>
+    
+</head>
+
+<body>
+    <p>班级：2017211314</p>
+    <p>学号：2017213508</p>
+    <p>姓名：蒋雪枫</p>
+    <div class="Frame" style="margin-left: 20vh;">
+        <div class="header">Calculator</div>
+        <div class="Result" id="result" value="Result:">
+            <div style="margin-right: 5px;"></div>
+        </div>
+        <div class="button">
+            <div class="row">
+                <div class="button-item" value="**2">x<sup>2</sup></div>
+                <div class="button-item" value="**">x<sup>y</sup></div>
+                <div class="button-item">sin</div>
+                <div class="button-item">cos</div>
+                <div class="button-item">tan</div>
+            </div>
+            <div class="row">
+                <div class="button-item" value="sqrt">√</div>
+                <div class="button-item" value="10**">10<sup>x</sup></div>
+                <div class="button-item">log</div>
+                <div class="button-item" value="(2.71)**">Exp</div>
+                <div class="button-item" value="%">Mod</div>
+            </div>
+            <div class="row">
+                <div class="button-item">↑</div>
+                <div id="ce" class="button-red">CE</div>
+                <div id="c" class="button-red">C</div>
+                <div id="del" class="button-red">DEL</div>
+                <div class="button-item" value="/">÷</div>
+            </div>
+            <div class="row">
+                <div class="button-item" value="3.14">π</div>
+                <div class="button-item">7</div>
+                <div class="button-item">8</div>
+                <div class="button-item">9</div>
+                <div class="button-item" value="*">×</div>
+            </div>
+            <div class="row">
+                <div class="button-item" value="!">n!</div>
+                <div class="button-item">4</div>
+                <div class="button-item">5</div>
+                <div class="button-item">6</div>
+                <div class="button-item">-</div>
+            </div>
+            <div class="row">
+                <div class="button-item">±</div>
+                <div class="button-item">1</div>
+                <div class="button-item">2</div>
+                <div class="button-item">3</div>
+                <div class="button-item">+</div>
+            </div>
+            <div class="row">
+                <div class="button-item">(</div>
+                <div class="button-item">)</div>
+                <div class="button-item">0</div>
+                <div class="button-item">.</div>
+                <div id="cal" class="button-green" onclick="calc()">=</div>
+            </div>
+        </div>
+    </div>
+    <span>请在Sin等函数与反号符±的运算表达式中输入完整括号</span>
+</body>
+
+</html>
